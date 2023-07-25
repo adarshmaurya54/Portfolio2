@@ -11,18 +11,24 @@
     height: 100vh;
     background: #000;
     padding: 0 40px;
+
 }
 
 .navbar {
     height: 20%;
-    display: flex;
     padding: 10px 20px;
+    display: flex;
     align-items: center;
     color: white;
 }
-
+.hamburger{
+    display: none;
+}
 .navbar .name {
+    display: flex;
+    align-items: center;
     width: 60%;
+    height: 100%;
 }
 
 .navbar .name h1 {
@@ -61,7 +67,7 @@
 
 .left-side {
     width: 50%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     height: 100%;
     color: white;
     display: flex;
@@ -103,7 +109,7 @@
 }
 
 .right-side {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 50%;
     height: 100%;
     background-image: url("images/bg1.png");
@@ -130,12 +136,6 @@ button.slide {
 }
 
 .right-side img:last-child {
-    height: 90%;
-    z-index: 1;
-    position: absolute;
-    top: 60%;
-    transform: translateY(-50%);
-    left: 5%;
 }
 
 .right-side img:first-child {
@@ -154,14 +154,5 @@ button.slide {
     100% {
         transform: translateX(0px);
         opacity: 1;
-    }
-}
- 
-@media screen and (max-width: 768px) {
-    .main-contents {
-        flex-direction: column;
-    }
-    .left-side{
-        align-items: start;
     }
 }
