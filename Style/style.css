@@ -61,7 +61,8 @@
 
 .left-side {
     width: 50%;
-    height: 20%;
+    border: 2px solid red;
+    height: 100%;
     color: white;
     display: flex;
     justify-content: center;
@@ -104,7 +105,7 @@
 .right-side {
     border: 2px solid red;
     width: 50%;
-    height: 20%;
+    height: 100%;
     background-image: url("images/bg1.png");
     display: flex;
     justify-content: center;
@@ -125,7 +126,7 @@ button.slide {
 }
 
 .right-side img {
-    height: 80%;
+    height: 20%;
 }
 
 .right-side img:last-child {
