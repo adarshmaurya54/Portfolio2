@@ -24,7 +24,7 @@
 .hamburger{
     display: none;
 }
-.navbar .name {
+.navbar .nav-with-hamb {
     display: flex;
     align-items: center;
     width: 60%;
@@ -73,7 +73,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 15px;
+    padding-left: 19px;
 }
 
 .left-side h1 {
