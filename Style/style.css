@@ -156,7 +156,12 @@ button.slide {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 10%;
+    right: 3%;
+}
+.right-side img:last-child{
+    position: absolute;
+    top: 50%;
+    right: 0;
 }
 
 @keyframes animate {
