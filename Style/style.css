@@ -43,6 +43,7 @@
 .navbar ul li a {
     color: white;
     text-decoration: none;
+    position: relative; 
 }
 
 .navbar ul li {
@@ -55,7 +56,23 @@
     align-items: center;
     width: 40%;
 }
-
+#navLinks li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+    transform-origin: left;
+    background-color: white;
+}
+#navLinks li a:hover::after{
+    transform: scaleX(1);
+    transition: transform 0.5s;
+    transform-origin: left;
+}
 .main-contents {
     display: flex;
     width: 100%;
@@ -132,10 +149,7 @@ button.slide {
 }
 
 .right-side img {
-    height: 20%;
-}
-
-.right-side img:last-child {
+    height: 50%;
 }
 
 .right-side img:first-child {
