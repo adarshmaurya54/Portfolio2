@@ -66,7 +66,7 @@
      .mobile-screen-nav {
          border: 2px solid rgba(255,255,255,0.14);
          position: fixed;
-         top: 70px;
+         top: 60px;
          left: 15px;
          right: 15px;
          bottom: 0px;
@@ -75,7 +75,6 @@
          padding: 20px;
          background-color: rgba(9, 9, 9, 0.404);
          backdrop-filter: blur(4px);
-         /* display: none; */
      }
 
 
