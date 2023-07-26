@@ -16,7 +16,7 @@ body {
     background-image: url(../image/dp1.png);
     background-color: var(--black);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: 75% -109%;
     background-attachment: fixed;
 }
 
@@ -29,7 +29,7 @@ html,.container {
 .navbar {
     height: 20vh;
     z-index: 1;
-    padding: 10px 10px;
+    padding: 10px 20px;
     display: flex;
     align-items: center;
     color: white;
