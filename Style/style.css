@@ -7,10 +7,14 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+:root {
+    --yellow: #ffa500;
+    --black: #000;
+    --black2: #000000e5;
+}
 body {
     background-image: url(../image/dp1.png);
-    background-color: #ffa500;
+    background-color: var(--black);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -19,19 +23,18 @@ body {
 .container {
     min-height: 100vh;
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 0 40px;
 }
 
 .navbar {
     height: 20%;
     z-index: 1;
-    padding: 10px 20px;
+    padding: 10px 10px;
     display: flex;
     align-items: center;
     color: white;
     position: sticky;
     top: 0;
-    background-color: #332008;
+    background-color: var(--black2);
     /* required */
 }
 
@@ -52,7 +55,7 @@ body {
 }
 
 .navbar h1 span {
-    color: #ffa500;
+    color: var(--yellow);
 }
 
 .navbar ul li a {
@@ -71,8 +74,17 @@ body {
     align-items: center;
     width: 40%;
 }
+#navLinks li {
+    list-style: none;
+    padding: 5px 0;
+}
 
-#navLinks li a::after {
+#navLinks li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+.line-bottom::after {
     content: '';
     position: absolute;
     left: 0;
@@ -85,12 +97,14 @@ body {
     background-color: white;
 }
 
-#navLinks li a:hover::after {
+.line-bottom:hover::after {
     transform: scaleX(1);
     transition: transform 0.5s;
     transform-origin: left;
 }
-
+.active{
+    
+}
 .main-contents {
     display: flex;
     width: 100%;
@@ -98,6 +112,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 20px;
 }
 
 .left-side {
@@ -107,7 +122,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 19px;
 }
 
 .left-side h1 {
@@ -120,7 +134,7 @@ body {
 }
 
 .left-side h1 span {
-    color: #ffa500;
+    color: var(--yellow);
 }
 
 .left-side p {
@@ -133,13 +147,13 @@ body {
     font-size: 1.2em;
     padding: 8px 15px;
     font-weight: bold;
-    border: 2px solid #ffa500;
+    border: 2px solid var(--yellow);
     border-radius: 5px;
     margin-right: 5px;
 }
 
 .left-side .first-btn {
-    background: #ffa500;
+    background: var(--yellow);
 }
 
 /* .right-side {

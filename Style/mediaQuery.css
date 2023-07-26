@@ -20,7 +20,6 @@
 
  @media screen and (max-width: 425px) {
      .container {
-         padding: 0 10px;
          overflow: hidden;
 
      }
@@ -64,20 +63,24 @@
          top: 0;
      }
 
-     #navLinks {
-         border: 2px solid red;
+     .mobile-screen-nav {
+         border: 2px solid rgba(255,255,255,0.14);
+         position: fixed;
+         top: 70px;
+         left: 15px;
+         right: 15px;
+         bottom: 0px;
+         z-index: 9997;
+         border-radius: 15px;
+         padding: 20px;
+         background-color: rgba(9, 9, 9, 0.404);
+         backdrop-filter: blur(4px);
+         /* display: none; */
      }
 
-     #navLinks ul {
-         border: 2px solid red;
-         position: fixed;
-         top: 10%;
-         left: 0;
-         height: 100%;
-         width: 100%;
-         z-index: 999;
-         background-color: rgba(255, 255, 255, 0.2);
-     }
+
+     
+
 
      .navbar .name h1 {
          font-size: 2.7em;
@@ -103,5 +106,23 @@
 
      .navbar ul {
          display: none;
+     }
+     footer{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 99997;
+        min-width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        background-color: var(--black2);
+     }
+     footer p{
+        color: white;
+        font-size: 1.2em;
+        font-weight: bold;
+     }
+     footer p span{
+        color: var(--yellow);
      }
  }
