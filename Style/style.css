@@ -232,6 +232,8 @@ a i.slide {
     font-size: 1.2em;
     line-height: 18px;
     padding-left: 13px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
 .about-content h4::before{
     content: "";
@@ -246,11 +248,26 @@ a i.slide {
 .about-content>p{
     color: white;
     font-size: 1.2em;
-    padding: 0 10px;
+    padding: 0 18px;
 }
 .about-content>p i{
     font-size: 2em;
     color: var(--yellow);
+}
+.after-line{
+    width: 100%;
+    color: #a4a4a4;
+    margin-bottom: 20px;
+    position: relative;
+    font-weight: 300;
+}
+.after-line::after{
+    content: "";
+    width: 140px;
+    height: 1px;
+    display: inline-block;
+    background-color: var(--yellow2);
+    margin: 9px 14px;
 }
 .mobile-screen-nav {
     display: none;
@@ -392,6 +409,79 @@ footer p span {
 .hamburger .hamb{
     z-index: 9997!important;
 }
+
+/* resume page css*/
+.resume-content{
+    color: white;
+    padding: 0 30px;
+    margin-bottom: 80px;
+}
+.resume-content>h2,.resume>h2{
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.resume{
+    padding: 0 30px;
+    text-transform: uppercase;
+}
+.bar{
+    background-color: var(--yellow);
+    height: 10px;
+}
+.java .bar{
+    width: 60%;
+}
+.html .bar{
+    width: 80%;
+}
+.jsp .bar{
+    width: 55%;
+}
+.mysql .bar{
+    width: 60%;
+}
+.jdbc .bar{
+    width: 63%;
+}
+.jquery .bar{
+    width: 40%;
+}
+.css .bar{
+    width: 77%;
+}
+.php .bar{
+    width: 50%;
+}
+.css .bar{
+    width: 77%;
+}
+.css .bar{
+    width: 70%;
+}
+
+.skill-graph{
+    height: 10px;
+    width: 100%;
+    background-color: #262626;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.skill-name{
+    font-size: 0.8em;
+    display: flex;
+    justify-content: space-between;
+}
+.left-skills{
+    width: 47%;
+}
+.right-skills{
+    width: 47%;
+}
+.skills-graph{
+    display: flex;
+    justify-content: space-between;
+}
+
 @keyframes animate {
     0% {
         transform: translateX(100px);
