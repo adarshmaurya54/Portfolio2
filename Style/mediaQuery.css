@@ -18,14 +18,11 @@
      }
  }
 
- @media screen and (max-width: 425px) {
-     .container {
-         overflow: hidden;
-
-     }
+ @media screen and (max-width: 768px) {
+     
 
      .main-contents {
-         margin-top: 20%;
+        
      }
 
      .hamburger {
@@ -59,7 +56,7 @@
      .navbar {
          width: 100%;
          justify-content: space-between;
-         position: fixed;
+         position: sticky;
          top: 0;
      }
 
@@ -129,5 +126,9 @@
      }
      pre{
         font-size: 0.8em;
+     }
+     .about-content{
+        justify-content: center;
+        padding: 0;
      }
  }

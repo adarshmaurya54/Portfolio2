@@ -21,13 +21,19 @@ body {
     background-repeat: no-repeat;
     background-position: 75% -49%;
     background-attachment: fixed;
+    position: relative;
 }
 
-html,
+
 .container {
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    left: 0;
     height: 100vh;
-    /* min-height: 100%; */
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1;
 }
 
 .navbar {
@@ -125,11 +131,11 @@ html,
     transform-origin: left;
 }
 
-.main-contents {
+.home-contents {
     display: flex;
     width: 100%;
     height: 80vh;
-    display: flex;
+    border: 2px solid red;
     justify-content: center;
     align-items: center;
     padding: 0 20px;
@@ -194,14 +200,6 @@ html,
     color: var(--yellow);
 }
 
-/* .left-side .first-btn {
-    background: var(--yellow);
-    color: wheat;    
-}
-.left-side button:last-child:hover{
-    background-color: var(--yellow);
-    color: wheat;    
-} */
 
 .slide {
     animation: animate .8s linear forwards;
@@ -211,10 +209,39 @@ p.slide {
     animation-delay: .8s;
 }
 
-button.slide {
+a i.slide {
     animation-delay: 1.6s;
 }
-
+.about-content{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 10px;
+    padding-left: 40px;
+}
+.about-content>div{
+    position: relative;
+    border-left: 2px solid var(--yellow);
+    width: 55%;
+    color: white;
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+.about-content h4{
+    font-size: 1.2em;
+    line-height: 18px;
+    padding-left: 13px;
+}
+.about-content h4::before{
+    content: "";
+    position: absolute;
+    left: -12px;
+    height: 17px;
+    width: 17px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid var(--yellow);
+}
 
 .mobile-screen-nav {
     display: none;
@@ -223,7 +250,6 @@ button.slide {
 pre {
     padding: 10px;
     white-space: pre-wrap;
-    border: 1px solid rgba(255,255,255,.54);
     border-radius: 5px;
     color: white;
 }
@@ -242,7 +268,7 @@ pre {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 13px;
     padding: 10px;
@@ -261,6 +287,14 @@ footer p span {
 .contact-us h3{
     color: var(--yellow);
     margin-bottom: 10px;
+}
+.contact-us{  
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.contact-us>div:first-child{
+    width: 50%;
 }
 .contact-us form{
     background-color: rgba(255,255,255,.14);
@@ -288,7 +322,7 @@ footer p span {
 }
 .contact-us .textarea-filed{
     height: 150px;
-    margin-top: 20px!important;
+    margin-top: 40px!important;
 }
 .submit-btn{
     text-align: center;
@@ -310,18 +344,28 @@ footer p span {
     color: #000;
 }
 .contact-us form .input-field label{
-    color: white;
+    color: var(--yellow);
     position: absolute;
     top: 25%;
     left: 5px;
     transition: .3s ease-in;
 }
+.contact-us .textarea-filed label{
+    top: 0px!important;
+}
+.textarea-filed textarea{
+    resize: none;
+}
 .input-field input:focus~label,
 .input-field input:valid~label{
     top: -15px;
 }
+.textarea-filed textarea:focus~label,
+.textarea-filed textarea:valid~label{
+    top: -26px!important;
+}
 ::placeholder{
-    color: white;
+    color: var(--yellow);
     font-weight: lighter;
 }
 @keyframes animate {
