@@ -213,10 +213,12 @@ a i.slide {
 }
 .about-content{
     display: flex;
-    justify-content: start;
-    align-items: center;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
     margin-top: 10px;
     padding-left: 40px;
+    margin-bottom: 80px;
 }
 .about-content>div{
     position: relative;
@@ -241,7 +243,15 @@ a i.slide {
     border-radius: 50%;
     border: 2px solid var(--yellow);
 }
-
+.about-content>p{
+    color: white;
+    font-size: 1.2em;
+    padding: 0 10px;
+}
+.about-content>p i{
+    font-size: 2em;
+    color: var(--yellow);
+}
 .mobile-screen-nav {
     display: none;
 }
@@ -272,6 +282,7 @@ footer {
     right: 13px;
     padding: 10px;
     user-select: none;
+    z-index: 9994;
 }
 
 footer p {
@@ -291,6 +302,7 @@ footer p span {
     display: flex;
     justify-content: center; 
     align-items: center;
+    margin-bottom: 40px;
 }
 .contact-us>div:first-child{
     width: 50%;
