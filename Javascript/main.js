@@ -11,11 +11,13 @@ $(document).ready(function(){
             $(".three").css("transform","rotate(41deg)");
             $(".three").css("transformOrigin","right");
             $("body").css("overflow","hidden");
+            $(".mobile-nav-overlay").css("display","block");
         }else{
             $(".one").css("transform","rotate(0)");
             $(".two").css("opacity","1");
             $(".three").css("transform","rotate(0)");
             $("body").css("overflow","auto");
+            $(".mobile-nav-overlay").css("display","none");
         }
         i++;
     });
