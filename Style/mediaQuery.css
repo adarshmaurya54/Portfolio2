@@ -143,6 +143,8 @@
 
      .contact-us {
          margin-top: 10px;
+         flex-direction: column;
+         padding: 0 20px;
      }
 
      .contact-us>div:first-child {

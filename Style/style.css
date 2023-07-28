@@ -235,7 +235,8 @@ a i.slide {
     margin-bottom: 20px;
     text-transform: uppercase;
 }
-.about-content h4::before{
+/* .about-content h4 */
+.leftside-line::before{
     content: "";
     position: absolute;
     left: -12px;
@@ -314,6 +315,8 @@ footer p span {
 .contact-us h3{
     color: var(--yellow);
     margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 2em;
 }
 .contact-us{  
     display: flex;
@@ -330,6 +333,26 @@ footer p span {
     height: 400px;
     padding: 30px 10px;
     border-radius: 5px;
+}
+.contact-us .card{
+    color: white;
+    background-color: rgba(255,255,255,.14);
+    margin: 20px 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+.contact-us .card .icon{
+    width: 30%;
+    text-align: center;
+}
+.contact-us .card .icon i{
+    background-color: rgba(255,255,255,.1);
+    color: var(--yellow);
+    padding: 20px;
+    border-radius: 50%;
+    text-align: center;
 }
 .input-field{
     margin-bottom: 20px;
@@ -479,6 +502,37 @@ footer p span {
     justify-content: space-between;
 }
 
+.summary{
+    font-size: 1.8em;
+    font-weight: 900;
+    margin-top: 20px;
+}
+.summary-content{
+    border-left: 2px solid var(--yellow);
+    padding-left: 15px;
+    margin-top: 15px;
+    position: relative;
+}
+.summary-content h4{
+    line-height: 20px;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.summary-content p{
+    text-transform: uppercase;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.summary-content ul li{
+    list-style-position: inside;
+    margin: 10px 0;
+}
+.summary-content .percentage{
+    text-transform: unset;
+    font-style: unset;
+    font-size: 18px;
+}
 @keyframes animate {
     0% {
         transform: translateX(100px);
