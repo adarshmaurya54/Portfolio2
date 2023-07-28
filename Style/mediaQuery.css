@@ -162,4 +162,15 @@
      .right-skills {
          width: 100%;
      }
+
+     .contact-us .content h4 {
+         font-size: 1.2em;
+     }
+
+     .contact-us .content p {
+         font-size: 0.8em;
+     }
+     .contact-us>div{
+        width: 90%;
+    }
  }

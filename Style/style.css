@@ -130,7 +130,9 @@ body {
     transition: transform 0.5s;
     transform-origin: left;
 }
-
+.active {
+    color: var(--yellow)!important;
+}
 .home-contents {
     display: flex;
     width: 100%;
@@ -322,10 +324,12 @@ footer p span {
     display: flex;
     justify-content: center; 
     align-items: center;
-    margin-bottom: 40px;
+    padding-left: 40px;
+    margin-bottom: 100px;
+    flex-direction: column;
 }
-.contact-us>div:first-child{
-    width: 50%;
+.contact-us>div{
+    width: 70%;
 }
 .contact-us form{
     background-color: rgba(255,255,255,.14);
@@ -341,7 +345,7 @@ footer p span {
     border-radius: 5px;
     display: flex;
     align-items: center;
-    height: 80px;
+    padding: 20px 0;
 }
 .contact-us .card .icon{
     width: 30%;
@@ -353,6 +357,17 @@ footer p span {
     padding: 20px;
     border-radius: 50%;
     text-align: center;
+}
+.contact-us .content h4{
+    color: #a4a4a4;
+    font-size: 1.9em;
+    margin-bottom: 10px;
+}
+.contact-us .content p{
+    font-size: 1.4em;
+}
+.contact-us .content p i{
+    margin-right: 10px;
 }
 .input-field{
     margin-bottom: 20px;
@@ -436,7 +451,7 @@ footer p span {
 /* resume page css*/
 .resume-content{
     color: white;
-    padding: 0 30px;
+    padding: 0 40px;
     margin-bottom: 80px;
 }
 .resume-content>h2,.resume>h2{
