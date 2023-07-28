@@ -74,7 +74,7 @@
      }
 
      body {
-         background-position: 75% 0%;
+         background-position: 75% 75%;
      }
      .about-content>h3{
         width: 100%;
@@ -127,7 +127,7 @@
      }
 
      pre {
-         font-size: 0.8em;
+         font-size: 0.7em;
      }
 
      .about-content {
@@ -186,6 +186,14 @@
     .first-service {
         height: 500px;
         width: 100%;
+    }
+    .interested .interested-in{
+        display: flex;
+        flex-direction: column;
+    }
+    .icon-box{
+        width: 100%;
+
     }
  }
  @media screen and (max-width: 375px){

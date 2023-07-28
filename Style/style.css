@@ -7,7 +7,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+::selection{
+    background-color: var(--yellow);
+}
 :root {
     --yellow: #ffa500;
     --yellow2: #ffbf48;
@@ -17,10 +19,11 @@
 }
 
 body {
-    background-image: url(../image/dp1.png);
+    background-image: url(../image/dp2.png);
     background-color: var(--black);
     background-repeat: no-repeat;
-    background-position: 75% -49%;
+    /* background-position: 75% -83%; */
+    background-position: 75% 176%;
     background-attachment: fixed;
     position: relative;
 }
@@ -223,7 +226,7 @@ a i.slide {
     align-items: start;
     flex-direction: column;
     margin-top: 10px;
-    padding-left: 40px;
+    padding: 0 40px;
     margin-bottom: 80px;
 }
 
@@ -275,7 +278,7 @@ a i.slide {
     position: relative;
     text-transform: uppercase;
     font-weight: 300;
-    font-size: 1.1em;
+    font-size: 1em;
     letter-spacing: 2px;
 }
 
@@ -567,7 +570,12 @@ textarea {
 .js .bar {
     width: 70%;
 }
-
+.csharp .bar{
+    width: 30%;
+}
+.bootstrup .bar{
+    width: 50%;
+}
 .skill-graph {
     height: 10px;
     width: 100%;
@@ -737,32 +745,42 @@ textarea {
 }
 /* Interseted */
 .about-content .interested{
-    margin-top: 20px;
-    width: 20%;
     color: white;
+    width: 100%;
+}
+.interested .interested-in{
+    width: 100%;
+    display: flex;
 }
 .icon-box{
     background-color: var(--black3);
     display: flex;
     align-items: center;
-    padding: 10px;
-    margin: 10px 0;
+    padding: 20px;
+    width: 25%;
+    margin: 10px;
+    border-radius: 5px;
+    transition: .3s ease-in;
+}
+.icon-box:hover{
+    background-color: rgba(255, 255, 255, .14);
 }
 .icon-box i{
     font-size: 1.5em;
     margin-right: 20px;
 }
 .icon-box h2{
+    text-transform: capitalize;
     font-weight: 700;
     font-family: 'Raleway', sans-serif;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 .icon-box img{
     width: 20px;
     margin-right: 20px;
 }
 .traveling i{
-    color: #47aeff;;
+    color: #ffbb2c;
 }
 .cycling i{
     color: #e80368;
@@ -775,6 +793,18 @@ textarea {
 }
 .cricket i{
     color: #11dbcf;
+}
+.business i{
+    color: #29cc61;
+}
+.webdevelopment i{
+    color: #ff5828;
+}
+.prblmsolving i{
+    color: #b2904f;
+}
+.teaching i{
+    color: #47aeff;;
 }
 @keyframes animate {
     0% {
