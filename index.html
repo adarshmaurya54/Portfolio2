@@ -25,15 +25,14 @@
         </div>
 
         <ul>
-            <li><a href="./index.html" class="active">Home</a></li>
-            <li><a href="./about.html" class="line-bottom">About</a></li>
-            <li><a href="./resume.html" class="line-bottom">Resume</a></li>
-            <li><a href="./services.html" class="line-bottom">Services</a></li>
-            <li><a href="./contact_us.html" class="line-bottom">Contact Us</a></li>
+            <li><a href="#" class="active hom">Home</a></li>
+            <li><a href="./about.html" class="line-bottom abo">About</a></li>
+            <li><a href="./resume.html" class="line-bottom res">Resume</a></li>
+            <li><a href="./services.html" class="line-bottom serv">Services</a></li>
+            <li><a href="./contact_us.html" class="line-bottom cont">Contact Us</a></li>
         </ul>
     </nav>
-    <div class="home-contents">
-
+    <section class="home-contents">
         <div class="left-side">
             <div>
                 <h1 class="slide">I'm <span id="typed"></span></h1>
@@ -50,7 +49,8 @@
 
             </div>
         </div>
-    </div>
+    </section>
+
     <div class="hamb">
         <div class="one"></div>
         <div class="two"></div>
@@ -59,11 +59,11 @@
     <div class="mobile-nav-overlay"></div>
     <div class="mobile-screen-nav">
         <ul id="navLinks">
-            <li><a href="./index.html" class="active">Home</a></li>
-            <li><a href="./about.html" class="line-bottom">About</a></li>
-            <li><a href="./resume.html" class="line-bottom">Resume</a></li>
-            <li><a href="./services.html" class="line-bottom">Services</a></li>
-            <li><a href="./contact_us.html" class="line-bottom">Contact Us</a></li>
+            <li><a href="./index.html" class="active hom">Home</a></li>
+            <li><a href="./about.html" class="line-bottom abo">About</a></li>
+            <li><a href="./resume.html" class="line-bottom res">Resume</a></li>
+            <li><a href="./services.html" class="line-bottom serv">Services</a></li>
+            <li><a href="./contact_us.html" class="line-bottom cont">Contact Us</a></li>
         </ul>
     </div>
     <footer>
@@ -75,8 +75,19 @@
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="https://kit.fontawesome.com/1959c63fe0.js" crossorigin="anonymous"></script>
+    <script>
+        (function () {
+            let typed = new Typed('#typed', {
+                strings: ['web developer.', 'software engineer.'],
+                typeSpeed: 100,
+                backSpeed: 50,
+                backDelay: 1500,
+                loop: true,
+            });
+        })();
+    </script>
     <script src="./Javascript/main.js"></script>
-    <script src="./Javascript/typedjs.js"></script>
+
 </body>
 
 </html>
