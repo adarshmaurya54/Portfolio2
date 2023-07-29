@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300;500;700;900&family=Poppins:wght@200;300;400;500;600;700&family=Raleway:wght@200;300;400&family=Roboto:wght@500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300;500;700;900&family=Poppins:wght@200;300;400;500;600;700&family=Raleway:wght@200;300;400;700;900&family=Roboto:wght@500;700&display=swap');
 * {
     margin: 0;
 
@@ -8,11 +7,12 @@
     font-family: 'Poppins', sans-serif;
 }
 ::selection{
-    background-color: var(--yellow);
+    background-color: var(--darkYellow);
 }
 :root {
     --yellow: #ffa500;
     --yellow2: #ffbf48;
+    --darkYellow: rgb(255, 123, 0);
     --black: #000;
     --black2: #000000e5;
     --black3: #0000007a;
@@ -359,27 +359,38 @@ footer p span {
 .contact-us form {
     background-color: rgba(255, 255, 255, .14);
     width: 100%;
-    height: 480px;
-    padding: 30px 10px;
+    max-height: 100%;
+    padding: 10px 10px;
     border-radius: 5px;
 }
-
+.contact-us .msg{
+    background-color: #dc3545;
+    font-size: 0.8em;
+    font-weight: 600;
+    color: rgb(43, 43, 43);
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+}
 .contact-us .card {
     color: white;
     background-color: rgba(255, 255, 255, .14);
     margin: 20px 0;
-    border-radius: 5px;
+    border-radius: 5px; 
     display: flex;
     align-items: center;
     padding: 20px 0;
     transition: .2s ease-in;
+
 }
 .contact-us .card:hover{
     background-color: var(--yellow);
 }
 .contact-us .card:hover .icon i{
     background-color: white;
-}.contact-us .card:hover .content p i:hover{
+}.contact-us .card:hover .content a i:hover{
     color: black;
 }
 .contact-us .card:hover .content h4{
@@ -402,18 +413,23 @@ footer p span {
     color: #a4a4a4;
     font-size: 1.9em;
     margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
 }
 
-.contact-us .content p {
+.contact-us .content a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: .4px;
     font-size: 1.4em;
+    font-family: 'Raleway', sans-serif;
 }
 
-.contact-us .content p i {
+.contact-us .content a i {
     margin-right: 20px;
     transition: 0.2s ease-in;
 }
 
-.contact-us .content p i:hover {
+.contact-us .content a i:hover {
     color: var(--yellow);
     cursor: pointer;
 }
