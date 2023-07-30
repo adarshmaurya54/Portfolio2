@@ -180,7 +180,7 @@ body {
     margin: 15px 0;
 }
 
-.left-side button {
+/* .left-side button {
     background: white;
     font-size: 1.2em;
     padding: 8px 15px;
@@ -189,18 +189,18 @@ body {
     margin-right: 5px;
     cursor: pointer;
     transition: all 0.4s ease-in;
-}
+} */
 
 .left-side a {
     text-decoration: none;
     color: white;
+    margin-right: 10px;
 }
 
 .left-side i {
     transition: all 0.4s ease-in;
     font-size: 2em;
     cursor: pointer;
-    margin-right: 10px;
 }
 
 .left-side i:hover {
@@ -236,14 +236,14 @@ a i.slide {
     width: 55%;
     color: white;
     margin-bottom: 30px;
-    padding-left: 10px;
+    padding-left: 7px;
 }
 
 .about-content h4 {
-    font-size: 1.2em;
-    line-height: 18px;
+    font-size: 1.3em;
+    line-height: 23px;
     padding-left: 13px;
-    margin-bottom: 20px;
+    margin-bottom: 13px;
     text-transform: uppercase;
 }
 
