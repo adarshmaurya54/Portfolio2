@@ -74,9 +74,6 @@
          backdrop-filter: blur(4px);
      }
 
-     body {
-         background-position: 75% 75%;
-     }
      .about-content>h3{
         width: 100%;
      }
@@ -195,6 +192,12 @@
     .icon-box{
         width: 100%;
 
+    }
+    img.bg{
+        left: 50%;
+        top: 10%;
+        transform: translateX(-50%);
+        transition: .2s ease-in;
     }
  }
  @media screen and (max-width: 375px){

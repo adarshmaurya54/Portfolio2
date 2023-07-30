@@ -19,16 +19,19 @@
 }
 
 body {
-    background-image: url(../image/dp2.png);
     background-color: var(--black);
-    background-repeat: no-repeat;
-    /* background-position: 75% -83%; */
-    background-position: 75% 176%;
-    background-attachment: fixed;
     position: relative;
 }
 
+img.bg{
+    z-index: -1;
+    position: fixed;
+    top: 20%;
+    right: 10%;
+    height: 90vh;
+    transition: .2s ease-in;
 
+}
 .container {
     position: fixed;
     overflow: auto;
@@ -36,7 +39,7 @@ body {
     left: 0;
     height: 100vh;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.726);
     z-index: -1;
 }
 
