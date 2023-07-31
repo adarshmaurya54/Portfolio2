@@ -195,7 +195,8 @@
     }
     img.bg{
         left: 50%;
-        top: 10%;
+        bottom: 10%;
+        height: 75vh;
         transform: translateX(-50%);
         transition: .2s ease-in;
     }
