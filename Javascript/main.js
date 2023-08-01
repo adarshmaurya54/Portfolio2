@@ -1,5 +1,3 @@
-
-
 $(document).ready(function () {
     var i = 1;
     $(".hamb").on("click", function () {
@@ -25,6 +23,8 @@ $(document).ready(function () {
     });
 })
 function ajaxcall(Url) {
+    $(".mobile-screen-nav").hide();
+    $(".main-loader").css("display","flex");
     $.ajax({
         type: "GET",
         url: Url,

@@ -28,7 +28,9 @@
          justify-content: center;
          align-items: center;
      } */
-
+     .main-loader{
+        background-color: transparent;
+     }
      .hamb {
         user-select: none;
          position: fixed;
@@ -195,7 +197,7 @@
     }
     img.bg{
         left: 50%;
-        bottom: 10%;
+        bottom: 7%;
         height: 75vh;
         transform: translateX(-50%);
         transition: .2s ease-in;
