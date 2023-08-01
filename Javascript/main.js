@@ -21,10 +21,13 @@ $(document).ready(function () {
         }
         i++;
     });
+    $('.bg').on('contextmenu', function(e) {
+        e.preventDefault();
+    });
 })
 function ajaxcall(Url) {
     $(".mobile-screen-nav").hide();
-    $(".main-loader").css("display","flex");
+    $(".main-loader").css("display", "flex");
     $.ajax({
         type: "GET",
         url: Url,
@@ -62,4 +65,3 @@ $(".cont").on("click", function (e) {
     ajaxcall("./contact_us.html");
     $("body").css("overflow", "auto");
 })
-
