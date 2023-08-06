@@ -21,7 +21,7 @@ $(document).ready(function () {
         }
         i++;
     });
-    $('.bg').on('contextmenu', function(e) {
+    $('.bg').on('contextmenu', function (e) {
         e.preventDefault();
     });
 })
@@ -65,3 +65,25 @@ $(".cont").on("click", function (e) {
     ajaxcall("./contact_us.html");
     $("body").css("overflow", "auto");
 })
+
+function validate(e, className, error, errormsg) {
+    if ($(e).val().trim() == "") {
+        $("." + className).html(`<i class="fa-solid fa-circle-xmark" style="color: #bd0202;"></i>`);
+        $("." + error).css("display", "flex");
+        $("." + errormsg).html(className + " field is require!");
+    } else {
+        $("." + className).html(`<i class="fa-solid fa-circle-check" style="color: #02bd2e;"></i>`);
+        $("." + error).css("display", "none");
+    }
+}
+function validateEmail(e,className) {
+    let regex = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}');
+    if(regex.test($(e).val().trim())){
+        $("." + className).html(`<i class="fa-solid fa-circle-check" style="color: #02bd2e;"></i>`);
+        $(".error2").css("display", "none");
+    }else{
+        $(".error2").css("display", "flex");
+        $(".error-msg2").html("Invalid email!");
+        $("." + className).html(`<i class="fa-solid fa-circle-xmark" style="color: #bd0202;"></i>`);
+    }
+}

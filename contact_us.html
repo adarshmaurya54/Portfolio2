@@ -79,20 +79,36 @@
                     <i class="fa-solid fa-triangle-exclamation"></i> The service is currently unavailable.
                 </div>
                 <div class="input-field">
-                    <input type="text" name="name" required>
-                    <label>Name</label>
+                    <div class="error error1">
+                        <span class="error-msg1"></span>
+                    </div>
+                    <input type="text" name="name" onblur="validate(this,'Name','error1','error-msg1')" required>
+                    <label>Name <span class="Name"></span></label>
+                    <i class="fa-solid fa-user right-icon"></i>
                 </div>
                 <div class="input-field">
-                    <input type="email" name="email" required>
-                    <label>Email</label>
+                    <div class="error error2">
+                        <span class="error-msg2"></span>
+                    </div>
+                    <input type="text" oninput="validateEmail(this,'Email')" onblur="validate(this,'Email','error2','error-msg2')" name="email" required>
+                    <label>Email <span class="Email"></span></label>
+                    <i class="fa-solid fa-envelope right-icon"></i>
                 </div>
                 <div class="input-field">
-                    <input type="text" name="subject" required>
-                    <label>Subject</label>
+                    <div class="error error3">
+                        <span class="error-msg3"></span>
+                    </div>
+                    <input type="text" name="subject" onblur="validate(this,'Subject','error3','error-msg3')" required>
+                    <label>Subject <span class="Subject"></span></label>
+                    <i class="fa-solid fa-book right-icon"></i>
                 </div>
                 <div class="input-field textarea-filed">
-                    <textarea rows="5" required></textarea>
-                    <label>Message</label>
+                    <div class="error error4">
+                        <span class="error-msg4"></span>
+                    </div>
+                    <textarea rows="5" onblur="validate(this,'Message','error4','error-msg4')" required></textarea>
+                    <label>Message <span class="Message"></span></label>
+                    <i class="fa-solid fa-message right-icon"></i>
                 </div>
                 <div class="submit-btn">
                     <button type="button">SEND MESSAGE</button>

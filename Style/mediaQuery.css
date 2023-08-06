@@ -28,11 +28,12 @@
          justify-content: center;
          align-items: center;
      } */
-     .main-loader{
-        background-color: transparent;
+     .main-loader {
+         background-color: transparent;
      }
+
      .hamb {
-        user-select: none;
+         user-select: none;
          position: fixed;
          top: 22px;
          right: 25px;
@@ -76,9 +77,10 @@
          backdrop-filter: blur(4px);
      }
 
-     .about-content>h3{
-        width: 100%;
+     .about-content>h3 {
+         width: 100%;
      }
+
      .navbar .name h1 {
          font-size: 2.4em;
      }
@@ -134,16 +136,20 @@
          align-items: center;
          padding: 0 30px;
      }
-     .about-content>h3{
-        line-height: 40px;
+
+     .about-content>h3 {
+         line-height: 40px;
      }
+
      .about-content .intro {
          width: 80%;
          margin-top: -15px;
      }
-     .about-content .interested{
-        width: 100%;
+
+     .about-content .interested {
+         width: 100%;
      }
+
      .contact-us {
          margin-top: 10px;
          flex-direction: column;
@@ -173,46 +179,63 @@
      .contact-us .content a {
          font-size: 0.8em;
      }
-     .contact-us>div{
-        width: 90%;
-    }
-    .resume-content{
-        padding: 0 30px;
-    }
-    .contact-us .cards{
-        width: 100%;
-        margin-top: -25px;
-    }
-    .first-service {
-        height: 500px;
-        width: 100%;
-    }
-    .interested .interested-in{
-        display: flex;
-        flex-direction: column;
-    }
-    .icon-box{
-        width: 100%;
 
-    }
-    img.bg{
-        left: 50%;
-        bottom: 7%;
-        height: 75vh;
-        transform: translateX(-50%);
-        transition: .2s ease-in;
-    }
+     .contact-us>div {
+         width: 90%;
+     }
+
+     .resume-content {
+         padding: 0 30px;
+     }
+
+     .contact-us .cards {
+         width: 100%;
+         margin-top: -25px;
+     }
+
+     .first-service {
+         height: 500px;
+         width: 100%;
+     }
+
+     .interested .interested-in {
+         display: flex;
+         flex-direction: column;
+     }
+
+     .icon-box {
+         width: 100%;
+
+     }
+
+     img.bg {
+         left: 50%;
+         bottom: 7%;
+         height: 75vh;
+         transform: translateX(-50%);
+         transition: .2s ease-in;
+     }
+
+     .contact-us .card .icon i {
+        font-size: 1.2em;
+         height: 60px;
+         width: 60px;
+         line-height: 60px;
+     }
  }
- @media screen and (max-width: 375px){
-    .contact-us .content p {
-        font-size: 0.7em;
-    }
- } 
- @media screen and (max-width: 960px){
-    .navbar .name{
-        width: 40%;
-    }
-    .navbar ul{
-        width: 60%;
-    }
- } 
+
+ @media screen and (max-width: 375px) {
+     .contact-us .content p {
+         font-size: 0.7em;
+     }
+ }
+
+ @media screen and (max-width: 960px) {
+     .navbar .name {
+         width: 40%;
+     }
+
+     .navbar ul {
+         width: 60%;
+     }
+ }
