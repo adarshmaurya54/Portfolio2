@@ -93,9 +93,10 @@ function internetCheck() {
         type: "GET",
         url: "https://jsonplaceholder.typicode.com/posts",
         success: function (response) {
+
         },
         error: function(error){
-            $("#wait-msg").html("Please check your internet!");
+            $("#wait-msg").html("Please check your internet or refresh the page!");
         }
     });
 }
