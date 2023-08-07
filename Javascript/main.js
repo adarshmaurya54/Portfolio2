@@ -87,3 +87,18 @@ function validateEmail(e,className) {
         $("." + className).html(`<i class="fa-solid fa-circle-xmark" style="color: #bd0202;"></i>`);
     }
 }
+
+function internetCheck() {
+    $.ajax({
+        type: "GET",
+        url: "https://jsonplaceholder.typicode.com/posts",
+        success: function (response) {
+        },
+        error: function(error){
+            $("#wait-msg").html("Please check your internet!");
+        }
+    });
+}
+setInterval(function(){
+    internetCheck();
+},1000)
