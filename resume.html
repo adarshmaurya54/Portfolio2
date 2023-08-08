@@ -34,49 +34,49 @@
         </ul>
     </nav>
     <section class="resume-content">
-        <h2 class="after-line">Resume</h2>
+        <!-- <h2 class="after-line">Resume</h2>
         <div class="resume">
             <h2 class="after-line">Skills</h2>
             <div class="skills-graph">
                 <div class="left-skills">
                     <div class="skill-name">
                         <p>Java core</p>
-                        <p>60%</p>
+                        <p class="java-per">70%</p>
                     </div>
                     <div class="java skill-graph">
                         <div class="bar"></div>
                     </div>
                     <div class="skill-name">
                         <p>Jsp</p>
-                        <p>55%</p>
+                        <p class="jsp-per">60%</p>
                     </div>
                     <div class="jsp skill-graph">
                         <div class="bar"></div>
                     </div>
                     <div class="skill-name">
                         <p>jdbc</p>
-                        <p>63%</p>
+                        <p class="jdbc-per">63%</p>
                     </div>
                     <div class="jdbc skill-graph">
                         <div class="bar"></div>
                     </div>
                     <div class="skill-name">
                         <p>css</p>
-                        <p>77%</p>
+                        <p class="css-per">80%</p>
                     </div>
                     <div class="css skill-graph">
                         <div class="bar"></div>
                     </div>
                     <div class="skill-name">
                         <p>javascript</p>
-                        <p>70%</p>
+                        <p class="js-per">70%</p>
                     </div>
                     <div class="js skill-graph">
                         <div class="bar"></div>
                     </div>
                     <div class="skill-name">
                         <p>bootstrap</p>
-                        <p>50%</p>
+                        <p class="bootstrap-per">60%</p>
                     </div>
                     <div class="bootstrap skill-graph">
                         <div class="bar"></div>
@@ -85,43 +85,43 @@
                 <div class="right-skills">
                     <div class="skill-name">
                         <p>html</p>
-                        <p>80%</p>
+                        <p class="html-per">80%</p>
                     </div>
                     <div class="html skill-graph">
                         <div class="bar"></div>
                     </div>
                     <div class="skill-name">
                         <p>mysql</p>
-                        <p>60%</p>
+                        <p class="mysql-per">70%</p>
                     </div>
                     <div class="mysql skill-graph">
                         <div class="bar"></div>
                     </div>
                     <div class="skill-name">
                         <p>jquery</p>
-                        <p>40%</p>
+                        <p class="jquery-per">55%</p>
                     </div>
                     <div class="jquery skill-graph">
                         <div class="bar"></div>
                     </div>
                     <div class="skill-name">
                         <p>php</p>
-                        <p>50%</p>
+                        <p class="php-per">50%</p>
                     </div>
                     <div class="php skill-graph">
                         <div class="bar"></div>
                     </div>
                     <div class="skill-name">
                         <p>C#</p>
-                        <p>30%</p>
+                        <p class="c#-per">45%</p>
                     </div>
                     <div class="csharp skill-graph">
                         <div class="bar"></div>
                     </div>
                 </div>
             </div>
-        </div>
-        <h1 class="summary">Summary</h1>
+        </div> -->
+        <!-- <h1 class="summary">Summary</h1>
         <div class="summary-content">
             <h4 class="leftside-line">Adarsh Maurya</h4>
             <p>I am a computer programmer and i am fascinated by the application of data structures and algorithms in
@@ -157,6 +157,48 @@
             <p>Krishna pal singh intermediate college (kpsic), pratapgarh, up</p>
             <p class="percentage">Percentage : 70%</p>
             </p>
+        </div> -->
+        <h1 class="summary">Projects</h1>
+        <div class="summary-content">
+            <h4 class="leftside-line">My Projects</h4>
+            <div class="all-projects">
+                <div class="project">
+                    <div class="thumnail">
+                        <img src="./image/project-ss/EasyCalc.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>EasyCalc Calculator</h2>
+                        <p>I created a basic calculator using HTML, CSS, and JavaScript to perform simple arithmetic operations effortlessly.</p>
+                    </div>
+                    <div class="demo-btn">
+                        <a href="https://madarsh54.github.io/EasyCalc/">Demo</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="thumnail">
+                        <img src="./image/project-ss/EasyCalc.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>EasyCalc Calculator</h2>
+                        <p>I created a basic calculator using HTML, CSS, and JavaScript to perform simple arithmetic operations effortlessly.</p>
+                    </div>
+                    <div class="demo-btn">
+                        <a href="https://madarsh54.github.io/EasyCalc/">Demo</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="thumnail">
+                        <img src="./image/project-ss/EasyCalc.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>EasyCalc Calculator</h2>
+                        <p>I created a basic calculator using HTML, CSS, and JavaScript to perform simple arithmetic operations effortlessly.</p>
+                    </div>
+                    <div class="demo-btn">
+                        <a href="https://madarsh54.github.io/EasyCalc/">Demo</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -196,6 +238,24 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="https://kit.fontawesome.com/1959c63fe0.js" crossorigin="anonymous"></script>
     <script src="./Javascript/main.js"></script>
+    <script>
+        (function () {
+            let skill = [".java-per", ".jsp-per", ".jdbc-per", ".css-per", ".js-per", ".bootstrap-per", ".html-per", ".mysql-per", ".jquery-per", ".php-per", ".c#-per"];
+            let skillPer = [70, 60, 63, 80, 70, 60, 80, 70, 55, 50, 45]
+
+            for (let i = 0; i < skill.length; i++) {
+                let counter = 1;
+                setInterval(function () {
+                    if (counter == skillPer[i]) {
+                        clearInterval();
+                    } else {
+                        counter = counter + 1;
+                        document.querySelector(skill[i]).innerHTML = counter + "%";
+                    }
+                }, 15)
+            }
+        })();
+    </script>
 </body>
 
 </html>

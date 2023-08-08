@@ -76,12 +76,12 @@ function validate(e, className, error, errormsg) {
         $("." + error).css("display", "none");
     }
 }
-function validateEmail(e,className) {
+function validateEmail(e, className) {
     let regex = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}');
-    if(regex.test($(e).val().trim())){
+    if (regex.test($(e).val().trim())) {
         $("." + className).html(`<i class="fa-solid fa-circle-check" style="color: #02bd2e;"></i>`);
         $(".error2").css("display", "none");
-    }else{
+    } else {
         $(".error2").css("display", "flex");
         $(".error-msg2").html("Invalid email!");
         $("." + className).html(`<i class="fa-solid fa-circle-xmark" style="color: #bd0202;"></i>`);
@@ -95,11 +95,13 @@ function internetCheck() {
         success: function (response) {
 
         },
-        error: function(error){
+        error: function (error) {
             $("#wait-msg").html("Please check your internet or refresh the page!");
         }
     });
 }
-setInterval(function(){
+setInterval(function () {
     internetCheck();
-},1000)
+}, 1000)
+
+
