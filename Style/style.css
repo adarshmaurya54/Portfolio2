@@ -977,7 +977,7 @@ textarea {
 }
 /* Project css */
 .project{
-    min-height: 540px;
+    min-height: 440px;
     border-radius: 15px;
     background: linear-gradient(180deg, var(--yellow) 0%, #7a6f04 100%);
     padding: 10px;
