@@ -53,7 +53,11 @@
          width: 97%;
          background-color: white;
          border-radius: 5px;
-         transition: transform .3s ease-in;
+         transition: transform .3s ease-in-out;
+     }
+
+     .hamb .two {
+         transition: opacity .3s ease-in-out;
      }
 
      .navbar {
@@ -217,13 +221,14 @@
      }
 
      .contact-us .card .icon i {
-        font-size: 1.2em;
+         font-size: 1.2em;
          height: 60px;
          width: 60px;
          line-height: 60px;
      }
-     .all-projects{
-        flex-direction: column;
+
+     .all-projects {
+         flex-direction: column;
      }
  }
 

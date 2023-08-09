@@ -782,6 +782,7 @@ textarea {
 }
 
 .summary-content ul li {
+    font-size: 0.8em;
     list-style-position: inside;
     margin: 10px 0;
 }
@@ -976,10 +977,14 @@ textarea {
 }
 /* Project css */
 .project{
-    min-height: 400px;
-    border-radius: 10px;
+    min-height: 540px;
+    border-radius: 15px;
     background: linear-gradient(180deg, var(--yellow) 0%, #7a6f04 100%);
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 .project .thumnail img{
     border-radius: 10px;
@@ -999,7 +1004,7 @@ textarea {
     font-style: normal;
 }
 .project .demo-btn{
-    margin-top: 30px;
+    margin-bottom: 10px;
     text-align: center;
 }
 .project .demo-btn a{
@@ -1034,7 +1039,7 @@ textarea {
         transform: rotate(0deg); 
     }
     20%{
-        transform: rotate(4deg); 
+        transform: rotate(10deg); 
     }
     40%{
         transform: rotate(-2deg); 
