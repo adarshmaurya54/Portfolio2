@@ -1001,7 +1001,8 @@ textarea {
     text-align: center;
 }
 .project .content h2{
-    text-decoration: underline;
+    line-height: 28px;
+    letter-spacing: 1px;
     margin-bottom: 10px;
 }
 .project .content p{
@@ -1040,7 +1041,6 @@ textarea {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    /* align-items: center; */
 }
 @keyframes rotationMotion {
     0%{
@@ -1050,14 +1050,14 @@ textarea {
         transform: rotate(10deg); 
     }
     40%{
-        transform: rotate(-2deg); 
+        transform: rotate(-5deg); 
         
     }
     60%{
-        transform: rotate(2deg); 
+        transform: rotate(5deg); 
     }
     80%{
-        transform: rotate(-1deg); 
+        transform: rotate(-2deg); 
     }
     100%{
         transform: rotate(1deg); 
