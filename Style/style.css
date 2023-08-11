@@ -980,9 +980,13 @@ textarea {
     display: flex;
     align-items: center;
     gap: 15px;
+    /* margin-right: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(340px,4fr));
+    grid-gap: 10px; */
 }
 .project{
-    max-width: 367px;
+    max-width: 390px;
     min-height: 500px;
     border-radius: 15px;
     background: linear-gradient(180deg, var(--yellow) 0%, #7a6f04 100%);
