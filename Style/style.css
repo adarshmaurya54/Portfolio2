@@ -221,7 +221,6 @@ img.bg {
 }
 
 .left-side {
-    border: 2px solid red;
     color: white;
     display: flex;
     justify-content: center;
