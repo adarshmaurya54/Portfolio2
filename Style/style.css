@@ -975,12 +975,16 @@ textarea {
 }
 /* Project css */
 .row{
-    display: flex;
+    /* display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 15px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 10px 20px;
 }
 .project{
-    max-width: 390px;
+    /* max-width: 400px; */
+
     min-height: 500px;
     border-radius: 15px;
     background: linear-gradient(180deg, var(--yellow) 0%, #7a6f04 100%);
