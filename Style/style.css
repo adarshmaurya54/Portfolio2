@@ -121,7 +121,7 @@ img.bg {
     position: sticky;
     top: 0;
     background-color: var(--black2);
-    /* required */
+    backdrop-filter: blur(3px);
 }
 
 .hamburger {
@@ -360,9 +360,7 @@ a i.slide {
     margin: 6px 14px;
 }
 
-.mobile-screen-nav {
-    display: none;
-}
+
 
 pre {
     white-space: pre-wrap;

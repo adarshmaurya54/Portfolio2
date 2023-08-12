@@ -69,6 +69,7 @@
         padding: 20px;
         background-color: rgba(9, 9, 9, 0.404);
         backdrop-filter: blur(4px);
+        display: none;
     }
 
     .about-content>h3 {
@@ -102,6 +103,7 @@
     }
 
     footer {
+        backdrop-filter: blur(3px);
         position: fixed;
         bottom: 0;
         left: 0;
@@ -244,4 +246,18 @@
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 
+}
+
+@media screen and (min-width: 770px) {
+
+    /* .mobile-screen-nav {
+        display: none!important;
+    } */
+    .mobile-nav-overlay {
+        display: none !important;
+    }
+
+    body {
+        overflow: auto !important;
+    }
 }
