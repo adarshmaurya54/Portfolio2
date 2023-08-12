@@ -221,8 +221,7 @@ img.bg {
 }
 
 .left-side {
-    width: 50%;
-    height: 100%;
+    border: 2px solid red;
     color: white;
     display: flex;
     justify-content: center;
@@ -980,10 +979,6 @@ textarea {
     display: flex;
     align-items: center;
     gap: 15px;
-    /* margin-right: 10px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(340px,4fr));
-    grid-gap: 10px; */
 }
 .project{
     max-width: 390px;
