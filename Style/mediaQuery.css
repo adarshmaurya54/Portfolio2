@@ -101,11 +101,14 @@
     .navbar ul {
         display: none;
     }
-
+    .msgs {
+        width: 350px;
+    }
     footer {
         backdrop-filter: blur(3px);
         position: fixed;
         bottom: 0;
+        
         left: 0;
         z-index: 99997;
         min-width: 100%;
@@ -252,6 +255,7 @@
 
     .mobile-screen-nav {
         display: none!important;
+        
     }
     .mobile-nav-overlay {
         display: none !important;

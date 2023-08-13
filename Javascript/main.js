@@ -103,5 +103,26 @@ function internetCheck() {
 setInterval(function () {
     internetCheck();
 }, 1000)
-
+var independenceDayDate = "1947/08/13";
+function calculateYear(date) { // birthday is a date
+    // Below one is the single line logic to calculate the no. of years...
+    var years = new Date(new Date() - new Date(date)).getFullYear() - 1970;
+    console.log(years);
+    return years;
+}
+function checkdate(){
+    let date = new Date();
+    if(date.getDate() == 15){
+        $(".other-msgs").css("display","flex");
+        $(".msg").html(`HAPPY ${calculateYear(independenceDayDate)}th INDEPENDENCE DAY`);
+        $(".fa-close").on("click",function(){
+            $(".other-msgs").css("display","none");
+        })
+        $(".container").css("background","linear-gradient(140deg,#FF993371 , #fafafa71,#13880871)")
+        $(".navbar").css("background","linear-gradient(140deg,#FF993371 , #fafafa71,#13880871)")
+        $("footer").css("background","linear-gradient(140deg,#FF993371 , #fafafa71,#13880871)")
+        $(".mobile-screen-nav").css("background","linear-gradient(140deg,#FF993371 , #fafafa71,#13880871)");
+    }
+}
+checkdate();
 
