@@ -112,7 +112,9 @@ function calculateYear(date) { // birthday is a date
 }
 function checkdate(){
     let date = new Date();
-    if(date.getDate() == 15){
+    let todayDate = date.getDate();
+    let currentMonth = date.getMonth() + 1;
+    if((todayDate == 14 || todayDate == 15) && currentMonth == 8){
         $(".other-msgs").css("display","flex");
         $(".msg").html(`HAPPY ${calculateYear(independenceDayDate)}th INDEPENDENCE DAY`);
         $(".fa-close").on("click",function(){
@@ -123,6 +125,8 @@ function checkdate(){
         $("footer").css("background","linear-gradient(140deg,#FF993371 , #fafafa71,#13880871)")
         $(".mobile-screen-nav").css("background","linear-gradient(140deg,#FF993371 , #fafafa71,#13880871)");
     }
+    let audio = new Audio("../musics/1st.mp3");
+    
 }
 checkdate();
 

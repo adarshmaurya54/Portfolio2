@@ -64,6 +64,7 @@
         left: 15px;
         right: 15px;
         bottom: 70px;
+        overflow: auto;
         z-index: 9997;
         border-radius: 15px;
         padding: 20px;
