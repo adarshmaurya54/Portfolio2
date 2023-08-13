@@ -250,9 +250,9 @@
 
 @media screen and (min-width: 770px) {
 
-    /* .mobile-screen-nav {
+    .mobile-screen-nav {
         display: none!important;
-    } */
+    }
     .mobile-nav-overlay {
         display: none !important;
     }
