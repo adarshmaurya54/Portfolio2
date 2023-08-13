@@ -996,6 +996,7 @@ textarea {
 .project .thumnail img{
     border-radius: 10px;
     width: 100%;
+    cursor: pointer;
 }
 .project .content{
     text-align: center;
