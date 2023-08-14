@@ -73,22 +73,33 @@ body {
 }
 
 .other-msgs .msg {
-    font-family: 'Raleway', sans-serif;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    font-size: 2em;
     text-align: center;
+    flex-direction: column;
     display: flex;
-    font-weight: bold;
     height: calc(100% - 50px);
-    user-select: none;
     z-index: 99999;
-    background: -webkit-linear-gradient(140deg,#138808, #fafafa,#FF9933);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+#countdown{
+    font-size: 1.5em;
+    font-family: 'Raleway', sans-serif;
+}
+.message{
     animation: textdownup 1s linear infinite alternate;
 }
-
+.other-msgs .msg p{
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    user-select: none;
+    background: linear-gradient(140deg,#FF9933 , #fafafa,#138808);
+}
 @keyframes textdownup {
     from {
         transform: translateY(-10px);

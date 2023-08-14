@@ -42,7 +42,7 @@ function ajaxcall(Url) {
 }
 $(".hom").on("click", function (e) {
     e.preventDefault();
-    ajaxcall("./index.html");
+    window.location = "./index.html";
     $("body").css("overflow", "auto");
 })
 $(".abo").on("click", function (e) {
@@ -103,30 +103,3 @@ function internetCheck() {
 setInterval(function () {
     internetCheck();
 }, 1000)
-var independenceDayDate = "1947/08/13";
-function calculateYear(date) { // birthday is a date
-    // Below one is the single line logic to calculate the no. of years...
-    var years = new Date(new Date() - new Date(date)).getFullYear() - 1970;
-    console.log(years);
-    return years;
-}
-function checkdate(){
-    let date = new Date();
-    let todayDate = date.getDate();
-    let currentMonth = date.getMonth() + 1;
-    if((todayDate == 14 || todayDate == 15) && currentMonth == 8){
-        $(".other-msgs").css("display","flex");
-        $(".msg").html(`HAPPY ${calculateYear(independenceDayDate)}th INDEPENDENCE DAY`);
-        $(".fa-close").on("click",function(){
-            $(".other-msgs").css("display","none");
-        })
-        $(".container").css("background","linear-gradient(140deg,#FF993371 , #fafafa71,#13880871)")
-        $(".navbar").css("background","linear-gradient(140deg,#FF993371 , #fafafa71,#13880871)")
-        $("footer").css("background","linear-gradient(140deg,#FF993371 , #fafafa71,#13880871)")
-        $(".mobile-screen-nav").css("background","linear-gradient(140deg,#FF993371 , #fafafa71,#13880871)");
-    }
-    let audio = new Audio("../musics/1st.mp3");
-    
-}
-checkdate();
-
