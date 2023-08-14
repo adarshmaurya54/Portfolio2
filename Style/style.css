@@ -19,7 +19,9 @@
     --black2: #000000e5;
     --black3: #0000007a;
 }
-
+iframe{
+    display: none;
+}
 body {
     background-color: var(--black);
     position: relative;
@@ -457,7 +459,6 @@ pre {
 }
 
 footer {
-    background: transparent!important;
     position: fixed;
     bottom: 0;
     right: 13px;
