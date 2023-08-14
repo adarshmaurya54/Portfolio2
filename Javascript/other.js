@@ -52,7 +52,5 @@ function checkdate() {
         // audio.play(); 
     }
 }
-function playSound() {
-}
-playSound()
+
 checkdate();
