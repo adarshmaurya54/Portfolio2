@@ -213,7 +213,9 @@ img.bg {
 }
 
 .navbar .name h1 {
+    font-family: 'Raleway', sans-serif;
     font-size: 4em;
+    font-weight: bolder;
     letter-spacing: 3px;
     user-select: none;
 }
@@ -459,6 +461,7 @@ pre {
 }
 
 footer {
+    background-color: none!important;
     position: fixed;
     bottom: 0;
     right: 13px;

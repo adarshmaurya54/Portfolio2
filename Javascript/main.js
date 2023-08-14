@@ -3,11 +3,11 @@ $(document).ready(function () {
     $(".hamb").on("click", function () {
         $(".mobile-screen-nav").toggle();
         if (i % 2 != 0) {
-            $(".one").css("transform", "rotate(-41deg)");
-            $(".one").css("transformOrigin", "right");
+            $(".one").css("transform", "translateY(250%) rotate(-41deg)");
+            $(".one").css("transformOrigin", "center");
             $(".two").css("opacity", "0");
-            $(".three").css("transform", "rotate(41deg)");
-            $(".three").css("transformOrigin", "right");
+            $(".three").css("transform", "translateY(-250%) rotate(41deg)");
+            $(".three").css("transformOrigin", "center");
             $("body").css("overflow", "hidden");
             $(".mobile-nav-overlay").css("display", "block");
             console.log("if");
