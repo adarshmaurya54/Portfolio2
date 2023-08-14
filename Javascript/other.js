@@ -46,7 +46,7 @@ function checkdate() {
         // audio.play();
         var audio = document.createElement(`iframe`)
         document.body.appendChild(audio);
-        audio.src = "../musics/1st.mp3"
+        audio.src = "./musics/1st.mp3"
         audio.setAttribute("allow", "autoplay");
 
         // audio.play(); 
