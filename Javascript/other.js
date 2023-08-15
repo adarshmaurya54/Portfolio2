@@ -45,9 +45,9 @@ function checkdate() {
         // audio =  new Audio("../musics/1st.mp3");
         // audio.play();
         var audio = document.createElement(`iframe`)
-        document.body.appendChild(audio);
-        audio.src = "../musics/1st.mp3"
-        audio.setAttribute("allow", "autoplay");
+        document.body.appendChild(audio); 
+        audio.src = "../musics/1st.mp3";  
+        audio.setAttribute("allow", "autoplay");  
 
         // audio.play(); 
     }
