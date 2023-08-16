@@ -1,7 +1,6 @@
 $(document).ready(function () {
     var i = 1;
     $(".hamb").on("click", function () {
-        $(".mobile-screen-nav").toggle();
         if (i % 2 != 0) {
             $(".one").css("transform", "translateY(250%) rotate(-41deg)");
             $(".one").css("transformOrigin", "center");
@@ -10,14 +9,14 @@ $(document).ready(function () {
             $(".three").css("transformOrigin", "center");
             $("body").css("overflow", "hidden");
             $(".mobile-nav-overlay").css("display", "block");
-            console.log("if");
+            $(".mobile-screen-nav").css("opacity","1");
         } else {
-            console.log("else");
             $(".one").css("transform", "rotate(0)");
             $(".two").css("opacity", "1");
             $(".three").css("transform", "rotate(0)");
             $("body").css("overflow", "auto");
             $(".mobile-nav-overlay").css("display", "none");
+            $(".mobile-screen-nav").css("opacity","0");
         }
         i++;
     });
