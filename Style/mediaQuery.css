@@ -65,6 +65,7 @@
         backdrop-filter: blur(4px);
         transition: opacity 0.3s ease;
         opacity: 0;
+        z-index: -1;
     }
 
     .about-content>h3 {
