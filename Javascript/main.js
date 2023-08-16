@@ -10,6 +10,7 @@ $(document).ready(function () {
             $("body").css("overflow", "hidden");
             $(".mobile-nav-overlay").css("display", "block");
             $(".mobile-screen-nav").css("opacity","1");
+            $(".mobile-screen-nav").css("z-index","3");
         } else {
             $(".one").css("transform", "rotate(0)");
             $(".two").css("opacity", "1");
@@ -17,6 +18,7 @@ $(document).ready(function () {
             $("body").css("overflow", "auto");
             $(".mobile-nav-overlay").css("display", "none");
             $(".mobile-screen-nav").css("opacity","0");
+           $(".mobile-screen-nav").css("z-index","-1");
         }
         i++;
     });
