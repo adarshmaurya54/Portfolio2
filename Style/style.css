@@ -188,7 +188,7 @@ img.bg {
 
 
 .navbar {
-    height: 20vh;
+    height: 15vh;
     z-index: 1;
     padding: 10px 20px;
     display: flex;
@@ -198,7 +198,7 @@ img.bg {
     top: 0;
     background-color: var(--black2);
     backdrop-filter: blur(3px);
-
+    
 }
 
 .hamburger {
@@ -210,9 +210,11 @@ img.bg {
     align-items: center;
     width: 60%;
     height: 100%;
+    transition: width 0.5s ease;
 }
 
 .navbar .name h1 {
+    transition: font-size 0.5s ease;
     font-family: 'Raleway', sans-serif;
     font-size: 4em;
     font-weight: bolder;
@@ -240,6 +242,7 @@ img.bg {
     justify-content: space-between;
     align-items: center;
     width: 40%;
+    transition: width 0.5s ease;
 }
 
 #navLinks li {
@@ -300,6 +303,7 @@ img.bg {
 }
 
 .left-side {
+    padding: 5px;
     color: white;
     display: flex;
     justify-content: center;
@@ -833,17 +837,13 @@ textarea {
     justify-content: space-between;
 }
 
-.left-skills {
-    width: 47%;
-}
 
-.right-skills {
-    width: 47%;
-}
+
 
 .skills-graph {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(47%, 1fr));
+    grid-gap: 10px 10px;
 }
 
 .summary {
