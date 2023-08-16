@@ -769,7 +769,6 @@ textarea {
 
     to {
         transform: translateX(0%);
-        /* width: 60%; */
     }
 }
 
@@ -819,6 +818,10 @@ textarea {
 }
 
 .bootstrap .bar {
+    animation: animategraph linear 1s;
+    width: 60%;
+}
+.dsa .bar {
     animation: animategraph linear 1s;
     width: 60%;
 }
