@@ -19,8 +19,8 @@
     --black2: #000000e5;
     --black3: #0000007a;
 }
-iframe{
-    display: none;
+.mt{
+    margin-top: 20px;
 }
 body {
     background-color: var(--black);
@@ -1081,7 +1081,6 @@ textarea {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 10px 20px;
 }
-
 .project {
     /* max-width: 400px; */
 
@@ -1122,6 +1121,12 @@ textarea {
 .project .demo-btn {
     margin-bottom: 10px;
     text-align: center;
+}
+.adv-proj .demo-btn {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 0.8em;
 }
 
 .project .demo-btn a {
