@@ -9,16 +9,16 @@ $(document).ready(function () {
             $(".three").css("transformOrigin", "center");
             $("body").css("overflow", "hidden");
             $(".mobile-nav-overlay").css("display", "block");
-            $(".mobile-screen-nav").css("opacity","1");
-            $(".mobile-screen-nav").css("z-index","3");
+            $(".mobile-screen-nav").css("opacity", "1");
+            $(".mobile-screen-nav").css("z-index", "3");
         } else {
             $(".one").css("transform", "rotate(0)");
             $(".two").css("opacity", "1");
             $(".three").css("transform", "rotate(0)");
             $("body").css("overflow", "auto");
             $(".mobile-nav-overlay").css("display", "none");
-            $(".mobile-screen-nav").css("opacity","0");
-           $(".mobile-screen-nav").css("z-index","-1");
+            $(".mobile-screen-nav").css("opacity", "0");
+            $(".mobile-screen-nav").css("z-index", "-1");
         }
         i++;
     });
@@ -26,44 +26,30 @@ $(document).ready(function () {
         e.preventDefault();
     });
 })
-function ajaxcall(Url) {
-    $(".mobile-screen-nav").hide();
-    $(".main-loader").css("display", "flex");
-    $.ajax({
-        type: "GET",
-        url: Url,
-        dataType: "html",
-        success: function (response) {
-            // Replace the entire document with the content of the new page
-            document.open();
-            document.write(response);
-            document.close();
-        }
-    });
-}
+
 $(".hom").on("click", function (e) {
-    e.preventDefault();
-    window.location = "./index.html";
+    $(".main-loader").css("display", "flex");
+    window.location.href = "./index.html";
     $("body").css("overflow", "auto");
 })
 $(".abo").on("click", function (e) {
-    e.preventDefault();
-    ajaxcall("./about.html");
+    $(".main-loader").css("display", "flex");
+    window.location.href = "./about.html";
     $("body").css("overflow", "auto");
 })
 $(".res").on("click", function (e) {
-    e.preventDefault();
-    ajaxcall("./resume.html");
+    $(".main-loader").css("display", "flex");
+    window.location.href = "./resume.html";
     $("body").css("overflow", "auto");
 })
 $(".serv").on("click", function (e) {
-    e.preventDefault();
-    ajaxcall("./services.html");
+    $(".main-loader").css("display", "flex");
+    window.location.href = "./services.html";
     $("body").css("overflow", "auto");
 })
 $(".cont").on("click", function (e) {
-    e.preventDefault();
-    ajaxcall("./contact_us.html");
+    $(".main-loader").css("display", "flex");
+    window.location.href = "./contact_us.html";
     $("body").css("overflow", "auto");
 })
 
@@ -89,18 +75,4 @@ function validateEmail(e, className) {
     }
 }
 
-function internetCheck() {
-    $.ajax({
-        type: "GET",
-        url: "https://jsonplaceholder.typicode.com/posts",
-        success: function (response) {
 
-        },
-        error: function (error) {
-            $("#wait-msg").html("Please check your internet or refresh the page!");
-        }
-    });
-}
-setInterval(function () {
-    internetCheck();
-}, 1000)

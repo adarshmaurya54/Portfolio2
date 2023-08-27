@@ -63,7 +63,7 @@
         padding: 20px;
         background-color: rgba(9, 9, 9, 0.404);
         backdrop-filter: blur(4px);
-        transition: opacity 0.3s ease;
+        transition: opacity 0.3s ease,z-index 0.3s ease;
         opacity: 0;
         z-index: -1;
     }
