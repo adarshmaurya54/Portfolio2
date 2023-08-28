@@ -1,3 +1,4 @@
+$(".main-loader").css("display", "none");
 $(document).ready(function () {
     var i = 1;
     $(".hamb").on("click", function () {
@@ -28,27 +29,22 @@ $(document).ready(function () {
 })
 
 $(".hom").on("click", function (e) {
-    $(".main-loader").css("display", "flex");
     window.location.href = "./index.html";
     $("body").css("overflow", "auto");
 })
 $(".abo").on("click", function (e) {
-    $(".main-loader").css("display", "flex");
     window.location.href = "./about.html";
     $("body").css("overflow", "auto");
 })
 $(".res").on("click", function (e) {
-    $(".main-loader").css("display", "flex");
     window.location.href = "./resume.html";
     $("body").css("overflow", "auto");
 })
 $(".serv").on("click", function (e) {
-    $(".main-loader").css("display", "flex");
     window.location.href = "./services.html";
     $("body").css("overflow", "auto");
 })
 $(".cont").on("click", function (e) {
-    $(".main-loader").css("display", "flex");
     window.location.href = "./contact_us.html";
     $("body").css("overflow", "auto");
 })
