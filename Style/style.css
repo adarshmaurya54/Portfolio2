@@ -309,18 +309,32 @@ img.bg {
     justify-content: center;
     align-items: center;
     user-select: none;
+    transition: font-size 0.2s ease;
 }
 
 .left-side h1 {
     font-size: 3.1em;
-    text-transform: capitalize;
 }
 
 .slide {
     opacity: 0;
 }
-
-.left-side h1 span {
+.left-side h1 span{
+    border-bottom: unset!important;
+    position: relative;
+}
+.left-side h1 span img{
+    position: absolute;
+    height: 93px;
+    width: 100%;
+    object-fit: contain;
+    transform: rotate(23deg);
+    top: 6px;
+    left: 121px;
+    z-index: -1;
+}
+.left-side h1 span,
+.left-side h3 span {
     color: var(--yellow);
     border-bottom: 3px solid var(--yellow);
     font-family: 'Raleway', sans-serif;
@@ -331,17 +345,6 @@ img.bg {
     font-size: 1.2em;
     margin: 15px 0;
 }
-
-/* .left-side button {
-    background: white;
-    font-size: 1.2em;
-    padding: 8px 15px;
-    border: 2px solid var(--yellow);
-    border-radius: 5px;
-    margin-right: 5px;
-    cursor: pointer;
-    transition: all 0.4s ease-in;
-} */
 
 .left-side a {
     text-decoration: none;
@@ -363,13 +366,15 @@ img.bg {
 .slide {
     animation: animate .8s linear forwards;
 }
-
+.left-side h3{
+    animation-delay: .4s;
+}
 p.slide {
     animation-delay: .8s;
 }
 
 a i.slide {
-    animation-delay: 1.6s;
+    animation-delay: 1.2s;
 }
 
 .about-content {
