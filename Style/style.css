@@ -982,7 +982,7 @@ textarea {
     gap: 15px;
 }
 .project{
-    max-width: 500px;
+    max-width: 367px;
     min-height: 500px;
     border-radius: 15px;
     background: linear-gradient(180deg, var(--yellow) 0%, #7a6f04 100%);
